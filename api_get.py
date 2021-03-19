@@ -1,12 +1,13 @@
 import requests
 
+
 def get_data(url, api_key, ):
 
     payload = {"api_key": api_key}
 
     complete_data = []
     page = 1
-    total_pages=1
+    total_pages = 1
     while page <= total_pages:
         response = requests.request("GET", url, params=payload)
         data = response.json()

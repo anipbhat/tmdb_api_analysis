@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def transformer(complete_data, genres):
     genres_df = pd.DataFrame(genres['genres'])
     print(genres_df.head())
